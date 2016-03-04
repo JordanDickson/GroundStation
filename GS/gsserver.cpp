@@ -37,6 +37,7 @@ GsServer::GsServer(messagebox *myMessageBox): networkListener(myMessageBox){
     this->myMessageBox = myMessageBox;
     port = 27015;
     target = QHostAddress::LocalHost;
+    //connect(myMessageBox,myMessageBox->addAckPacket(),outPackets,outPackets.recieveAckPacket());
 }
 
 GsServer::~GsServer(){
